@@ -1,0 +1,59 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Верстка шапки и первого банера */
+
+.wrapper {
+    margin: auto;
+}
+
+.header {
+    background: url(/img/Fone.png), lightgray 50% / cover no-repeat;
+    width: 1600px;
+    height: 903px;
+}
+
+
+.logo {
+    padding: 31px 0 0 71px;
+    width: 188px;
+    height: 45px;
+}
+
+.link {
+    color: #141932;
+    font-family: 'Source Sans Pro Black', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.header-text {
+    color: rgba(20, 25, 50, 0.85);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 61px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.text-button {
+    color: #FFF;
+    font-family: 'Source Sans Pro Black', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.button {
+    background: #141932;
+}
