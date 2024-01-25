@@ -1,6 +1,5 @@
 body {
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
 }
 
 a {
@@ -8,52 +7,427 @@ a {
 }
 
 
+
 /* Верстка шапки и первого банера */
 
-.wrapper {
+.container {
     margin: auto;
 }
 
 .header {
-    background: url(/img/Fone.png), lightgray 50% / cover no-repeat;
-    width: 1600px;
-    height: 903px;
+    background-image: url(/img/Fone.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-.logo {
-    padding: 31px 0 0 71px;
-    width: 188px;
-    height: 45px;
+.header-line {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.link {
+.header-logo {
+    padding-left: 65px;
+}
+
+.nav {
+    padding-left: 96px;
+}
+
+.phone {
+    padding-right: 71px;
+}
+
+.nev-item {    
     color: #141932;
     font-family: 'Source Sans Pro Black', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin-right: 59px;
+}
+
+.number-item {
+    color: #141932;
+    font-family: 'Source Sans Pro Black', sans-serif;
+    font-size: 16px;
     font-style: normal;
     font-weight: 900;
     line-height: normal;
 }
 
-.header-text {
+.header-down {
+    padding: 166px 0 0 71px;
+}
+
+.header-title {
     color: rgba(20, 25, 50, 0.85);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 61px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
 
-.text-button {
-    color: #FFF;
-    font-family: 'Source Sans Pro Black', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
+.btn {
+    padding-top: 70px;
 }
 
 .button {
-    background: #141932;
+    color: #FFF;
+    background-color: #141932;;
+    font-family: 'Source Sans Pro Black', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    padding: 9px 15px;
+    border-radius: 7px;
+} 
+
+
+
+/* Баннер */
+
+/* 1-блок */
+.banner-top {
 }
+
+.banner-txt-top {
+    color: #141932;
+    font-family: "Source Sans Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 65px;
+}
+
+/* 2-блок */
+.banner-down {
+    background-image: url(/img/Rectangle\ 7.png);
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-txt-down {
+    color: #141932;
+    text-align: justify;
+    font-family: "Source Sans Pro";
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 170%;
+    padding-top: 160px;
+    padding-left: 970px;
+}
+
+
+
+/* Проекты */
+
+/* 1-блок */
+.content-txt {
+}
+
+.title-content {
+    color: #141932;
+    font-family: "Source Sans Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 65px;
+}
+
+/* 2-блок */
+.projects {
+    display: flex;
+    margin-left: 65px;
+}
+
+.project-1 {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 700px;
+    height: 702px;
+    margin: 8px;
+}
+
+.project-column {
+    position: relative;
+}
+
+.project-2 {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 700px;
+    height: 340px;
+    margin: 10px;
+    position: absolute;
+    top: 360px;
+}
+
+.project-3 {
+    border-radius: 15px;
+    background: #D9D9D9;
+    width: 700px;
+    height: 340px;
+    margin: 10px;
+    position: absolute;
+    
+}
+
+.project-txt-big {
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding-top: 235px;
+}
+
+.project-txt {
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+    padding-top: 49px;
+}
+
+
+
+/* Форма обратной связи */
+
+/* Блок-1 */
+
+.contacts {
+    display: flex;
+    flex-flow: column;
+}
+
+.contact-title {
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-left: 65px;
+}
+
+.contact-txt {
+    color: #000;
+    font-family: "Source Sans Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 65px;
+}
+
+.form-block {
+    border-radius: 15px;
+    background: #202330;
+    margin-left: 65px;
+    height: 668px;
+}
+
+.form-title {
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 35px;
+    padding-left: 27px;
+}
+
+.form-txt {
+    color: rgba(255, 255, 255, 0.35);
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 27px;
+}
+
+.form {
+    padding-left: 27px;
+    padding-top: 37px;
+    height: 330px;
+}
+
+input {
+    
+}
+
+
+.data-txt {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    padding-top: 15px;
+}
+
+.text-area {
+    width: 484px;
+    border: none;
+    border-bottom: 1px solid #FFF;
+    padding-top: 15px;
+}
+
+textarea {
+    color: #FFF;
+    background: transparent;   
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    border: none;
+    height: 43px;
+    width: 484px;
+}
+
+.send {
+    margin-top: 107px;
+    width: 200px;
+    float: left;
+}
+
+.button-form {    
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    border: 1px solid #FFF;
+    background: #202330;
+    color: #FFF;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.agree {
+    padding: 85px 0 0 261px;
+    
+}
+
+.agree-txt {
+    color: rgba(255, 255, 255, 0.35);
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.agree-link {
+    color: rgba(255, 255, 255, 0.35);
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+/* border: 1px solid rgba(255, 255, 255, 0.3)
+*/
+
+
+/* Футер-1 */
+
+.footer-first {
+    width: 100vw;
+    height: 500px;
+    background: #D9D9D9;
+    margin-top: 80px;
+    position: relative;
+}
+
+.footer-logo {
+    padding: 70px 0 0 65px;
+}
+
+.footer-links {
+    padding: 77px 0 0 65px;
+    float: left;
+}
+
+.footer-txt {
+    color: #141932;
+    font-family: "Source Sans Pro";
+    font-size: 24px;
+    font-weight: 400;
+    padding-top: 8px;
+}
+
+.footer-block-btn {
+    position: absolute;
+    margin: -50px 0 0 1200px;
+}
+
+
+.footer-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 6px;
+    border: 2px solid #141932;
+    color: #141932;
+    font-family: "Source Sans Pro";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+
+/* footer-second */
+
+.footer-second {
+    width: 100vw;
+    height: 652px;
+    background: #202330;
+    display: flex;
+}
+
+.logo-2024 {
+    padding: 60px 0 0 65px;
+}
+
+.logo-block-txt {
+    padding: 26px 0 0 17px;
+}
+
+.logo-txt {
+    color: rgba(217, 217, 217, 0.35);
+    font-family: "Source Sans Pro";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
