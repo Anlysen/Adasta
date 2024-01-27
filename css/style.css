@@ -12,7 +12,9 @@ a {
 
 .container {
     margin: auto;
+    max-width: 1600px;
 }
+
 
 .header {
     background-image: url(/img/Fone.png);
@@ -22,23 +24,59 @@ a {
     background-size: cover;
 }
 
+
+
+.header-burger {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: aqua;
+    position: relative;
+}
+
+.header-burger span {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    left: 5px;
+}
+
+.header-burger span:nth-child(1) {
+    transform: translateY(-10px);
+}
+
+.header-burger span:nth-child(3) {
+    transform: translateY(10px);
+}
+
+
 .header-line {
     padding-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 1600px;
 }
 
+
+
 .header-logo {
-    padding-left: 65px;
+    padding-left: 20px;
+}
+
+.nav-block {
+    display: flex;
 }
 
 .nav {
-    padding-left: 96px;
+    display: flex;
+    padding: 26px 283px 0 0;
 }
 
 .phone {
-    padding-right: 71px;
+    padding: 26px 71px 0 0;
 }
 
 .nev-item {    
@@ -61,7 +99,8 @@ a {
 }
 
 .header-down {
-    padding: 166px 0 0 71px;
+    padding: 166px 0 0 20px;
+    max-width: 1600px;
 }
 
 .header-title {
@@ -103,7 +142,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-left: 65px;
+    padding-left: 20px;
 }
 
 /* 2-блок */
@@ -132,7 +171,8 @@ a {
 /* Проекты */
 
 /* 1-блок */
-.content-txt {
+.content {
+    max-width: 1600px;
 }
 
 .title-content {
@@ -142,13 +182,13 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-left: 65px;
+    padding-left: 20px;
 }
 
 /* 2-блок */
 .projects {
     display: flex;
-    margin-left: 65px;
+    margin-left: 20px;
 }
 
 .project-1 {
@@ -211,6 +251,10 @@ a {
 
 /* Блок-1 */
 
+.contact-block {
+    max-width: 1600px;
+}
+
 .contacts {
     display: flex;
     flex-flow: column;
@@ -223,7 +267,7 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    padding-left: 65px;
+    padding-left: 20px;
 }
 
 .contact-txt {
@@ -233,13 +277,13 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 65px;
+    padding-left: 20px;
 }
 
 .form-block {
     border-radius: 15px;
     background: #202330;
-    margin-left: 65px;
+    margin-left: 20px;
     height: 668px;
 }
 
@@ -363,11 +407,11 @@ textarea {
 }
 
 .footer-logo {
-    padding: 70px 0 0 65px;
+    padding: 70px 0 0 20px;
 }
 
 .footer-links {
-    padding: 77px 0 0 65px;
+    padding: 77px 0 0 20px;
     float: left;
 }
 
@@ -415,7 +459,7 @@ li {
 }
 
 .logo-2024 {
-    padding: 60px 0 0 65px;
+    padding: 60px 0 0 20px;
 }
 
 .logo-block-txt {
@@ -431,3 +475,116 @@ li {
     line-height: normal;
 }
 
+
+@media (max-width: 1024px) {
+
+    .header-logo {
+        width: 100px;
+        height: 23px;
+    }
+
+    .header-title {
+        font-size: 18px;
+    }
+
+    .button {
+        width: 280px;
+        height: 34px;
+        font-size: 12px;
+    }
+
+    .banner-txt-top {
+        font-size: 17px;
+    }
+
+    .banner-txt-down {
+        font-size: 10px;
+    }
+
+    .title-content {
+        font-size: 17px;
+    }
+
+    .project-1,
+    .project-2,
+    .project-3 {
+        width: 281px;
+        height: 270px;
+    }
+
+    .project-txt-big,
+    .project-txt {
+        font-size: 36px;
+    }
+
+    .contact-title {
+        font-size: 17px;
+    }
+
+    .contact-txt {
+        font-size: 12px;
+    }
+
+    .form-block {
+        width: 280px;
+        height: 429px;
+    }
+
+    .form-title {
+        font-size: 17px;
+    }
+
+    .form-txt {
+        font-size: 7px;
+    }
+
+    .data-txt {
+        font-size: 8px;
+    }
+
+    .text-area {
+        width: 110px;
+    }
+
+    .txt-area-message {
+        font-size: 8px;
+        width: 71px;
+        height: 27px;
+    }
+
+    .button-form {
+        font-size: 12px;
+        width: 120px;
+        height: 45px;
+    }
+
+    .agree-txt,
+    .agree-link {
+        font-size: 10px;
+    }
+
+    .img-footer-logo {
+        width: 100px;
+        height: 24px;
+    }
+
+    .footer-txt {
+        font-size: 12px;
+    }
+
+    .footer-button {
+        font-size: 12px;
+        width: 120px;
+        height: 45px;
+    }
+
+    .footer-logo-img {
+        width: 35px;
+        height: 13px;
+    }
+
+    .logo-txt {
+        font-size: 10px;
+    }
+
+}

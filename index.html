@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="/css/adaptive.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Adasta</title>
-    <meta name="viewport" content="width=device-width">
     </head>
 <body>
     
         <div class="container">
 
          <header class="header">
+            <button class="header-burger">
+                <span></span><span></span><span></span>
+            </button>
             <div class="header-line">
                 <div class="header-logo">
                     <a href="#">
@@ -22,16 +24,16 @@
                     </a>
                 </div>
 
-                <div class="nav">
-                    <a class="nev-item" href="#">О компании</a>
-                    <a class="nev-item" href="#">Проекты</a>
-                    <a class="nev-item" href="#">Контакты</a>
-                </div>
-
-                <div class="phone">
-                    <div class="number">
-                        <a class="number-item" href="#">+7 (499) 000-00-00</a>
-                    </div>
+                <div class="nav-block">
+                    <ul class="nav">
+                        <li><a class="nev-item" href="#">О компании</a></li>
+                        <li><a class="nev-item" href="#">Проекты</a></li>
+                        <li><a class="nev-item" href="#">Контакты</a></li>
+                    </ul>
+    
+                    <ul class="phone">
+                            <li><a class="number-item" href="#">+7 (499) 000-00-00</a></li>
+                    </ul>
                 </div>
 
             </div>
@@ -106,7 +108,7 @@
                             <input type="text" class="data-txt" placeholder="Контактный email*"><br>
                         </div>
                         <div class="text-area">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+                            <textarea class="txt-area-message" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
                         </div>
                         <div class="send">
                             <button class="button-form">Оформить заявку</button>
@@ -124,7 +126,7 @@
 
     <footer class="footer-first">
         <div class="footer-logo">
-            <img src="/img/Adasta 1.png" alt="">
+            <img class="img-footer-logo" src="/img/Adasta 1.png" alt="">
         </div>
         <div class="footer-links">
             <li><a href="#" class="footer-txt">Главная</a></li><br>
@@ -140,7 +142,7 @@
 
     <footer class="footer-second">
         <div class="logo-2024">
-            <img src="/img/2024.png" alt="">
+            <img class="footer-logo-img" src="/img/2024.png" alt="">
         </div>
         <div class="logo-block-txt">
             <p class="logo-txt">ADASTA</p>
