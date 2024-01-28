@@ -154,6 +154,12 @@ a {
     background-size: cover;
 }
 
+.banner-block {
+    width: 394px;
+    height: 451px;
+    padding: 160px 0 0 970px;
+}
+
 .banner-txt-down {
     color: #141932;
     text-align: justify;
@@ -162,8 +168,6 @@ a {
     font-style: normal;
     font-weight: 600;
     line-height: 170%;
-    padding-top: 160px;
-    padding-left: 970px;
 }
 
 
@@ -478,6 +482,15 @@ li {
 
 @media (max-width: 1024px) {
 
+    .header {
+        width: 320px;
+        height: 551px;
+    }
+
+    .header-burger {
+        
+    }
+
     .header-logo {
         width: 100px;
         height: 23px;
@@ -495,6 +508,16 @@ li {
 
     .banner-txt-top {
         font-size: 17px;
+    }
+
+    .banner-block {
+        width: 165px;
+        height: 203px;
+    }
+
+    .banner-down {
+        width: 671px;
+        height: 550px;
     }
 
     .banner-txt-down {
